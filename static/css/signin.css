@@ -12,20 +12,16 @@ body {
     margin-top: 150px;
 }
 
-div {
-    font-size: 20px;
-    text-align: justify;
+#div2 {
+    background-color: chartreuse;    
     color: green;
+    font-size: 20px;
     border: 2px solid black;
+    text-align: justify;
     border-radius: 20px;
     align-content: center;
     padding: 20px;
     margin: 100px;
-}
-
-#div2 {
-    background-color: chartreuse;   
-    color: black;
     justify-content: center;
     align-items: center;
     width: 300px;

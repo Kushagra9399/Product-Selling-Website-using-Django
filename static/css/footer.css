@@ -1,9 +1,13 @@
 * {
     font-family: 'Times New Roman', Times, serif;
 }
+
 footer {
     background-color: #333;
+    color: white;
+    border: none;
     margin: 0;
+    padding: 0;
     margin-top: auto;
     bottom: 0;
     width: 100%;
@@ -12,13 +16,33 @@ footer {
 
 footer p {
     text-align: center;
-    color: white;
     padding: 10px;
     margin: 0;
  }
 
- ul {
-    color: white;
+ul {
     text-align: left;
     margin: 20px;
- }
+}
+
+.specification {
+    text-align: left;
+    border: none;
+    margin: 0;
+}
+
+.contact {
+    text-align: left;
+    border: none;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.footlink {
+    color: antiquewhite;
+}
+
+.footlink:hover {
+    color: aqua;
+    text-decoration: underline;
+}

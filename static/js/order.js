@@ -20,7 +20,7 @@ function processOrder() {
     }
 
     // If validation passes, process the order (for demonstration)
-    alert("Your order has been placed! Total: ₹" + document.getElementById("total-price").textContent);
+    alert("Your order has been placed! \n You will recieve a call within 24 hours. \nTotal: ₹" + document.getElementById("total-price").textContent);
 }
 
 // Event listener for quantity input change to update total price
