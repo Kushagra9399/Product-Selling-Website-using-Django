@@ -2,16 +2,15 @@ body {
     background-image: url(/static/img/Toast.png);
     background-size: contain;
     margin: 0;
+    padding: 0;
     background-position-y: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
 div {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    margin: 50px;
 }
 
 .div1 {
@@ -20,7 +19,6 @@ div {
     border-radius: 20px;
     font-size: 20px;
     padding: 20px;
-    display: inline-block;
     border: 2px solid orange;
     transition: 1000ms ease;
 }
@@ -56,4 +54,11 @@ input {
     padding: 5px;
     width: 100%;
     color: blueviolet;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
 }
