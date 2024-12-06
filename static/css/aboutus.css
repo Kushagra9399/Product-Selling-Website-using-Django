@@ -1,0 +1,47 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #f8b400, #fce38a);
+    color: #333;
+}
+
+main {
+    padding: 40px 10%;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 140px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    font-family: 'Verdana', sans-serif;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-family: 'Verdana', sans-serif;
+    margin-bottom: 20px;
+}

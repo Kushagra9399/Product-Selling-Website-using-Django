@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="/static/css/product.css">
+</head>
+<body>
+    <header>
+        {% include "header.html" %}
+    </header>
+    <div class="product-card">
+        <!-- Product Image -->
+        <img src="/static/img/Toast.png" alt="Product Image">
+
+        <!-- Product Details -->
+        <div class="product-details">
+            <h2 class="product-title">Indori Special Toast</h2>
+            <p class="product-description">
+                Want some tasty snack? <br> Here it is. Indori Special Toast <br>
+                It is Delicious, Crispy, Sweet, and Tasty.
+            </p>
+            <p class="product-price">200₹/kg</p>
+
+            <!-- Buy Button -->
+            <button class="buy-button"><a href="/order">Buy Now</a></button>
+        </div>
+    </div>
+    <footer>
+        {% include "footer.html" %}
+    </footer>
+</body>
+</html>

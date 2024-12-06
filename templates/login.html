@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Login Page
+        </title>
+    </head>
+    <link rel="stylesheet" href="/static/css/login.css">
+    <header>
+        {% include "header.html" %}
+    </header>
+    <body>
+        <div class="div1">
+            <form action="/">
+                Name: <br>
+                <input type="text", placeholder="Name"><br>
+                Email: <br>
+                <input type="email", placeholder="Email"><br>
+                Password: <br>
+                <input type="Password", placeholder="Password">
+                <br>
+                <button type="submit">Log In</button>
+                Not have Account? <a href="/sign-in/">Sign In</a>
+            </form>
+        </div>
+        <footer>
+            {% include "footer.html" %}
+        </footer>
+    </body>
+</html>

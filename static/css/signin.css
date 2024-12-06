@@ -1,0 +1,76 @@
+body {
+    background-image: url(/static/img/Toast.png);
+    margin-top: 0px;
+    background-position-y: 50px;
+    background-size: contain;
+}
+
+.nav-links {
+    top: 0;
+    list-style-type: none;
+    margin: 0px;
+    margin-right: 25px;
+    left: 0;
+    display: flex;
+    padding: 0;
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    align-content: center;
+    justify-content: flex-end;
+    background-color: darkcyan;
+    position: fixed;
+}
+
+div {
+    font-size: 20px;
+    text-align: justify;
+    color: green;
+    border: 2px solid black;
+    margin: 20px;
+    align-content: center;
+    padding: 30px;
+    display: inline-block;
+    overflow: auto;
+    margin-top: 7%;
+}
+
+#div2 {
+    background-color: chartreuse;   
+    color: black;
+    padding: 5px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    transition: 1000ms;
+}
+
+#div2:hover {
+    background-color: darkorange;
+    transition: 1000ms;
+}
+
+#inp {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    width: 90%;
+    padding: 5px;
+    justify-content: center;
+    align-content: center;
+}
+
+#inp:hover {
+    border-color: aqua;
+}
+
+button {
+    border: 2px solid black;
+    display: flex;
+    margin-left: 40%;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
