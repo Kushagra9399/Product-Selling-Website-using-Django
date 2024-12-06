@@ -25,5 +25,5 @@ urlpatterns = [
     path('login-page/',views.login),
     path('sign-in/',views.sign_in),
     path("product/",views.products),
-    path('order/',views.order)
+    path('product/order/',views.order)
 ]

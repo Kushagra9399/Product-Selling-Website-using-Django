@@ -18,6 +18,13 @@ def aboutUs(request):
     return render(request,'aboutus.html')
 
 def login(request):
+    try:
+        if request.method=="POST":
+            name = request.POST.get("name")
+            mob = request.POST.get("phone")
+            pas = request.POST.get("password")
+    except:
+        pass
     return render(request,'login.html')
 
 def sign_in(request):

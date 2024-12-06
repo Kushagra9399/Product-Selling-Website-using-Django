@@ -11,13 +11,14 @@
     <body>
         <div class="container">
             <div class="div1">
-                <form action="/">
+                <form action="/", method="post">
+                    {% csrf_token %}
                     Name: <br>
-                    <input type="text", placeholder="Name"><br>
+                    <input type="text", placeholder="Name", name="name" required><br>
                     Email: <br>
-                    <input type="email", placeholder="Email"><br>
+                    <input type="phone2numeric", placeholder="Mobile Number", name="phone" required><br>
                     Password: <br>
-                    <input type="Password", placeholder="Password">
+                    <input type="Password", placeholder="Password", name="password" required>
                     <br>
                     <button type="submit">Log In</button>
                     Not have Account? <a href="/sign-in/">Sign In</a>
