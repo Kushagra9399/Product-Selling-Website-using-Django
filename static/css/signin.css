@@ -14,7 +14,7 @@ body {
 
 #div2 {
     background-color: chartreuse;    
-    color: green;
+    color: black;
     font-size: 20px;
     border: 2px solid black;
     text-align: justify;
@@ -22,6 +22,7 @@ body {
     align-content: center;
     padding: 20px;
     margin: 100px;
+    margin-top: 200px;
     justify-content: center;
     align-items: center;
     width: 300px;
@@ -33,7 +34,7 @@ body {
     transition: 1000ms;
 }
 
-#inp {
+.inp {
     border: 2px solid black;
     border-radius: 10px;
     margin: 10px;
@@ -43,7 +44,7 @@ body {
     align-content: center;
 }
 
-#inp:hover {
+.inp:hover {
     border-color: aqua;
 }
 
@@ -53,6 +54,14 @@ button {
     margin-left: 40%;
     border-radius: 5px;
     align-items: center;
-    justify-content: center;
+    justify-content: ce nter;
     align-self: center;
+}
+
+.p1 {
+    margin: 20px;
+    color: black;
+    text-decoration: underline;
+    font-size: 24px;
+    text-align: center;
 }
