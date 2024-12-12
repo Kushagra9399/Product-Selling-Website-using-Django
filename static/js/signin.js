@@ -1,3 +1,13 @@
+function password_check(event) {
+    var pas = document.getElementById('password').value;
+    var con_pas = document.getElementById('con_password').value;
+    if (pas !== con_pas){
+        alert('Confirm Password is different.');
+        event.preventDefault();
+        return false;
+    }
+}
+
 function sendOTP() {
     var phoneNumber = document.getElementById("otp").value;
 

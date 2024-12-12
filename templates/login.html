@@ -5,23 +5,24 @@
         </title>
     </head>
     <link rel="stylesheet" href="/static/css/login.css">
+    <script src="/static/js/login.js"></script>
     <header>
         {% include "header.html" %}
     </header>
     <body>
         <div class="container">
             <div class="div1">
-                <form action="/", method="post">
+                <form method="post", action='/'>
                     {% csrf_token %}
-                    Name: <br>
-                    <input type="text", placeholder="Name", name="name" required><br>
-                    Email: <br>
-                    <input type="phone2numeric", placeholder="Mobile Number", name="phone" required><br>
-                    Password: <br>
-                    <input type="Password", placeholder="Password", name="password" required>
+                    Name:<span style="color: red;">*</span> <br>
+                    <input type="text" placeholder="Name" name="name" value='{{name}}' required><br>
+                    Mobile Number:<span style="color: red;">*</span> <br>
+                    <input type="tel" placeholder="Mobile Number" name="phone" value='{{mob}}' required><br>
+                    Password:<span style="color: red;">*</span> <br>
+                    <input type="Password" placeholder="Password" name="password" value='{{password}}' required>
                     <br>
-                    <button type="submit">Log In</button>
-                    Not have Account? <a href="/sign-in/">Sign In</a>
+                    <button type="submit" id="login" onclick="loginUser()">Log In</button>
+                    Don't have an Account? <a href="/sign-in/">Sign In</a>
                 </form>
             </div>
         </div>

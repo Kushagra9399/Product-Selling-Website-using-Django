@@ -14,26 +14,27 @@
         <div id = "div2">
             <p class="p1">Sign In</p>
             <br>
-            <form action="/">
-            Name:
+            <form onsubmit="password_check(event)", action="/login-page/", method='POST'>
+            {% csrf_token %}
+            Name:<span style="color: red;">*</span>
             <br>
-            <input type="text", class="inp", placeholder="Name" required>
+            <input type="text", class="inp", placeholder="Name", name="name" required>
             <br>
-            Mobile Number:
+            Mobile Number:<span style="color: red;">*</span>
             <br>
-            <input type="phone2numeric", id="otp", class="inp" , placeholder="Mobile Number" required>
+            <input type="phone2numeric", id="otp", class="inp" , placeholder="Mobile Number", name="mob", required>
             <button onclick="event.preventDefault(); sendOTP();">Send OTP</button>
             <br>
             Email:
             <br>
             <input type="email", class="inp", placeholder="Email">
             <br>
-            Create Password: <br>
-            <input class="inp", placeholder="Password" required>
+            Create Password:<span style="color: red;">*</span> <br>
+            <input class="inp", placeholder="Password", name="password", id="password", required>
             <br>
-            Confirm Password:
+            Confirm Password:<span style="color: red;">*</span>
             <br>
-            <input type="Password", class="inp", placeholder="Re-enter Password">
+            <input type="Password", class="inp", placeholder="Re-enter Password", id="con_password", required>
             <br>
             <button id="button">Sign In</button>
             Already have an Account? <a href="/login-page">LogIn</a>

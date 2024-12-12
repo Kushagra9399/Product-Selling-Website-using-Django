@@ -32,3 +32,8 @@ li a:hover {
     transition-duration: 200ms;
     height: fit-content;
 }
+
+img {
+    height:50px;
+    width: 50px;
+}
