@@ -12,7 +12,8 @@ function loginUser() {
     };
     // If login is successful, set the login status
     localStorage.setItem('login', 'true');
-    localStorage.setItem('username', na);  // Optionally store the username
-    localStorage.setItem('mobile',mob);
+    localStorage.setItem('username', na.value);  // Optionally store the username
+    localStorage.setItem('mobile',mob.value);
+    localStorage.setItem('password', pas.value);
     window.location.href = '/';  // Redirect to the homepage or dashboard
 }

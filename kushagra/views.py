@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from service.models import Service
 
 def homePage(request):
     return render(request,"index.html")
@@ -23,7 +24,11 @@ def sign_in(request):
     return render(request,'signin.html')
 
 def products(request):
-    return render(request,'product.html')
+    product_data = Service.objects.all()
+    data = {
+        'product_data':product_data
+    }
+    return render(request,'product.html',data)
 
 def order(request):
     return render(request,'order.html')

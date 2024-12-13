@@ -4,9 +4,21 @@
             Profile
         </title>
     </head>
+    <header>
+        {% include "header.html" %}
+    </header>
     <link rel="stylesheet" href="/static/css/profile.css">
     <script src="/static/js/profile.js"></script>
     <body>
-        <p id="name">{{ username }}</p>
+        <p>Hi, <span id="name"></span></p>
+        <hr>
+        <h4>Mobile Number: <span id="mobile"></span>
+            <br>
+            Email: <span id="email"></span>
+        </h4>
+        <hr>
+    <footer>
+        {% include "footer.html" %}
+    </footer>
     </body>
 </html>

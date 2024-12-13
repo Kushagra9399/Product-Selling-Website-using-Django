@@ -25,5 +25,8 @@ function logoutUser() {
     document.cookie = "login=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC";  // Expire login cookie
     document.cookie = "username=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC";  // Expire username cookie
     localStorage.setItem('login', null);
+    localStorage.setItem('username',null);
+    localStorage.setItem('mobile', null);
+    localStorage.setItem('password',null);
     window.location.href = '/';  // Redirect to login page
 }
