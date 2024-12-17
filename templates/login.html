@@ -15,11 +15,12 @@
                 <form method="post", action='/'>
                     {% csrf_token %}
                     Name:<span style="color: red;">*</span> <br>
-                    <input type="text" placeholder="Name" name="name" value='{{name}}' required><br>
+                    <input type="text" placeholder="Name" name="name" id="name" value='{{name}}' required><br>
                     Mobile Number:<span style="color: red;">*</span> <br>
-                    <input type="tel" placeholder="Mobile Number" name="phone" value='{{mob}}' required><br>
+                    <input type="tel" placeholder="Mobile Number" name="phone" id="mobile" value='{{mob}}' required><br>
                     Password:<span style="color: red;">*</span> <br>
-                    <input type="Password" placeholder="Password" name="password" value='{{password}}' required>
+                    <input type="Password" placeholder="Password" name="password" id="password" value='{{password}}' required>
+                    <span id="error">{{error}}</span>
                     <br>
                     <button type="submit" id="login" onclick="loginUser()">Log In</button>
                     Don't have an Account? <a href="/sign-in/">Sign In</a>

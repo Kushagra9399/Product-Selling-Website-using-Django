@@ -62,3 +62,8 @@ input {
     justify-content: center;
     align-self: center;
 }
+
+span {
+    color: red;
+    font-size: 12px;
+}

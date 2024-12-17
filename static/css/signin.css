@@ -30,7 +30,7 @@ body {
 }
 
 #div2:hover {
-    background-color: darkorange;
+    background-color: rgb(255, 251, 0);
     transition: 1000ms;
 }
 
@@ -63,5 +63,11 @@ button {
     color: black;
     text-decoration: underline;
     font-size: 24px;
+    text-align: center;
+}
+
+span {
+    font-size: 12px;
+    color: red;
     text-align: center;
 }

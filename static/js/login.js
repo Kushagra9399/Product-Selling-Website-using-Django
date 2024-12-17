@@ -1,16 +1,17 @@
 // Assuming the login process is successful (e.g., password check)
 function loginUser() {
     // Your authentication logic goes here
-    const na = document.getElementsByName('name')[0];
-    const mob = document.getElementsByName('phone')[0];
-    const pas = document.getElementsByName('password')[0];
+    const na = document.getElementsById('name').value;
+    const mob = document.getElementsById('phone').value;
+    const pas = document.getElementsById('password').value;
 
     // Check if any field is empty
-    if (!na.value.trim() || !mob.value.trim() || !pas.value.trim()) {
+    if (!na || !mob || !pas) {
         alert("Please fill all fields.");
         return;  // Stop further execution
     };
     // If login is successful, set the login status
+    
     localStorage.setItem('login', 'true');
     localStorage.setItem('username', na.value);  // Optionally store the username
     localStorage.setItem('mobile',mob.value);

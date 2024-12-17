@@ -14,20 +14,21 @@
         <div id = "div2">
             <p class="p1">Sign In</p>
             <br>
-            <form onsubmit="password_check(event)", action="/login-page/", method='POST'>
+            <form onsubmit="check_all(event)", action="/login-page/", method='POST'>
             {% csrf_token %}
             Name:<span style="color: red;">*</span>
             <br>
-            <input type="text", class="inp", placeholder="Name", name="name" required>
+            <input type="text", class="inp", id="name", placeholder="Name", name="name" required>
+            <span id="name-error"></span>
             <br>
             Mobile Number:<span style="color: red;">*</span>
             <br>
-            <input type="phone2numeric", id="otp", class="inp" , placeholder="Mobile Number", name="mob", required>
-            <button onclick="event.preventDefault(); sendOTP();">Send OTP</button>
+            <input type="phone2numeric", id="mobile", class="inp" , placeholder="Mobile Number", name="mob", required>
+            <span id="mobile-error"></span>
             <br>
             Email:
             <br>
-            <input type="email", class="inp", placeholder="Email">
+            <input type="email", class="inp", placeholder="Email", name="email">
             <br>
             Create Password:<span style="color: red;">*</span> <br>
             <input class="inp", placeholder="Password", name="password", id="password", required>
@@ -35,6 +36,7 @@
             Confirm Password:<span style="color: red;">*</span>
             <br>
             <input type="Password", class="inp", placeholder="Re-enter Password", id="con_password", required>
+            <span id="password-error"></span>
             <br>
             <button id="button">Sign In</button>
             Already have an Account? <a href="/login-page">LogIn</a>
