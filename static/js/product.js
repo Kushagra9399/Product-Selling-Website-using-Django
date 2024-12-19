@@ -1,8 +1,7 @@
-function order() {
-    const login = localStorage.getItem('login');
-    if (login === 'true') {
-        window.location.href = '/product/order';
-    } else {
-        alert("Please Login First.")
-    }
+function order_on() {
+    window.location.href = '/product/order';
+}
+
+function order_off(){
+    alert("Please Login First");
 }

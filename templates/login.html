@@ -12,17 +12,19 @@
     <body>
         <div class="container">
             <div class="div1">
-                <form method="post", action='/'>
+                <form method="post", onsubmit="loginUser()" action="/authenticate/">
                     {% csrf_token %}
                     Name:<span style="color: red;">*</span> <br>
                     <input type="text" placeholder="Name" name="name" id="name" value='{{name}}' required><br>
+                    <span id="name-error"></span>
                     Mobile Number:<span style="color: red;">*</span> <br>
                     <input type="tel" placeholder="Mobile Number" name="phone" id="mobile" value='{{mob}}' required><br>
+                    <span id="mobile-error"></span>
                     Password:<span style="color: red;">*</span> <br>
                     <input type="Password" placeholder="Password" name="password" id="password" value='{{password}}' required>
-                    <span id="error">{{error}}</span>
+                    <span id="error">{{ error }}</span>
                     <br>
-                    <button type="submit" id="login" onclick="loginUser()">Log In</button>
+                    <button type="submit" id="login">Log In</button>
                     Don't have an Account? <a href="/sign-in/">Sign In</a>
                 </form>
             </div>

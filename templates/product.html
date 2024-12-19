@@ -27,7 +27,11 @@
                 <p class="product-price">{{i.product_price}}</p>
                 
                 <!-- Buy Button -->
-                <button class="buy-button", onclick=order()>Buy Now</button>
+                {% if user.is_on %}
+                    <button class="buy-button", onclick=order_on()>Buy Now</button>
+                {% else %}
+                    <button class="buy-button", onclick=order_off()>Buy Now</button>
+                {% endif %}
             </div>
         </div>
         {% endfor %}
