@@ -56,6 +56,7 @@ def valid_user(request):
             if user.check_password(password):  # Assuming password is hashed in your custom model
                 login(request, user)  # Log in the user
                 user.is_on = True
+                user.save()
                 return render(request, 'index.html')
             else:
                 data['error']="Invalid Credentials"
