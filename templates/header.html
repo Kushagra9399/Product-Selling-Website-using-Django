@@ -6,7 +6,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/about-us">About us</a></li>
             <li><a href="/product">Products</a></li>
-            {% if user.is_on %}
+            {% if request.user.is_on %}
                 <li><a href="/profile" id="profile"><img src="/static/img/workplace.jpg" alt="KP"></a></li>
                 
                 <!-- Logout form -->

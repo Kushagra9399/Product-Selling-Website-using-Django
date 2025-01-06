@@ -1,5 +1,5 @@
 body {
-    background-image: url(/static/img/Toast.png);
+    background-image: linear-gradient(90deg,grey,black,grey);
     padding: 0;
     margin: 0;
     background-position-y: 50px;

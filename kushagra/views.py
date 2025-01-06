@@ -32,7 +32,8 @@ def sign_in(request):
 def products(request):
     product_data = Service.objects.all()
     data = {
-        'product_data':product_data
+        'product_data':product_data,
+        'user':request.user
     }
     return render(request,'product.html',data)
 
@@ -40,7 +41,8 @@ def order(request):
     return render(request,'order.html')
 
 def profile(request):
-    return render(request,'profile.html')
+    user = {'user':request.user}
+    return render(request,'profile.html',user)
 
 def valid_user(request):
     if request.method == "POST":
