@@ -20,9 +20,11 @@ def log_in(request):
             password = request.POST.get('password')
             user = Users(username=name,mobile=mobile,email=email)
             user.set_password(password)
+            user.is_superuser = False
             user.save()
-            data = {'name':name,'mob':mobile,'password':password}
-    except:
+            data = {'name':name,'mob':mobile}
+    except Exception as e:
+        print("Error ",e)
         pass
     return render(request,'login.html',data)
 
@@ -41,8 +43,8 @@ def order(request):
     return render(request,'order.html')
 
 def profile(request):
-    user = {'user':request.user}
-    return render(request,'profile.html',user)
+    data = {'user':request.user}
+    return render(request,'profile.html',data)
 
 def valid_user(request):
     if request.method == "POST":

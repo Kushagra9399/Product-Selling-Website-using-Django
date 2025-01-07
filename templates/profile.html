@@ -14,9 +14,14 @@
         <hr>
         <h4>Mobile Number: <span id="mobile">{{ user.mobile }}</span>
             <br>
-            Email: <span id="email"></span>
+            Email: <span id="email">{{ request.user.email }}</span>
         </h4>
         <hr>
+        <hr><hr>
+        <form action="{% url 'logout_user' %}" method="POST" id="logout-form" style="display:none;">
+            {% csrf_token %}
+        </form>
+        <button onclick="document.getElementById('logout-form').submit();">Logout</button>
     <footer>
         {% include "footer.html" %}
     </footer>
