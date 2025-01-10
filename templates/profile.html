@@ -10,17 +10,18 @@
     <link rel="stylesheet" href="/static/css/profile.css">
     <script src="/static/js/profile.js"></script>
     <body>
-        <p>Hi, <span id="name">{{ user.username }}</span></p>
-        <hr>
-        <h4>Mobile Number: <span id="mobile">{{ user.mobile }}</span>
-            <br>
+        <h4>
+            <p>Hi, <span id="name">{{ user.username }}</span></p>
+            <hr>
+            Mobile Number: <span id="mobile">{{ user.mobile }}</span>
+            <hr>
             Email: <span id="email">{{ request.user.email }}</span>
         </h4>
         <hr>
-        <hr><hr>
         <form action="{% url 'logout_user' %}" method="POST" id="logout-form" style="display:none;">
             {% csrf_token %}
         </form>
+        <hr>
         <button onclick="document.getElementById('logout-form').submit();">Logout</button>
     <footer>
         {% include "footer.html" %}

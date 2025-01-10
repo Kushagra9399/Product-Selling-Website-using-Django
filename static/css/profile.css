@@ -11,9 +11,19 @@ button {
     font-size: 15px;
     padding: 10px;
     width: fit-content;
+    transition: 500ms;
+}
+
+button:hover {
+    background-color: aqua;
 }
 
 span {
     font-size: 20px;
+    text-decoration: dashed;
+}
 
+hr {
+    width: 99%;
+    color: black;
 }

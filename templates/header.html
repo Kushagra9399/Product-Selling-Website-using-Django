@@ -3,15 +3,15 @@
     <script src="/static/js/header.js"></script>
     <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about-us">About us</a></li>
-            <li><a href="/product">Products</a></li>
+            <li><a href="/" class="{% if request.path == '/' %}active{% endif %}">Home</a></li>
+            <li><a href="/about-us" class="{% if request.path == '/about-us/' %}active{% endif %}">About us</a></li>
+            <li><a href="/product" class="{% if request.path == '/product/' %}active{% endif %}">Products</a></li>
             {% if request.user.is_on %}
-                <li><a href="/profile" id="profile"><img src="/static/img/profile.jpg" alt="KP"></a></li>
+                <li><a href="/profile" id="profile" class="{% if request.path == '/profile/' %}active{% endif %}"><img src="/static/img/profile.jpg" alt="KP"></a></li>
                 
             {% else %}
-                <li><a href="/sign-in" id="signin">Sign In</a></li>
-                <li><a href="/login-page" id="login">Login</a></li>
+                <li><a href="/sign-in" id="signin" class="{% if request.path == '/sign-in/' %}active{% endif %}">Sign In</a></li>
+                <li><a href="/login-page" id="login" class="{% if request.path == '/login-page/' %}active{% endif %}">Login</a></li>
             {% endif %}
         </ul>
     </nav>
