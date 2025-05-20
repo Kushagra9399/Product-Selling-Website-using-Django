@@ -1,4 +1,8 @@
-Hello, welcome to my GitHub account.
-This is a simple website made by using django framework.
-Currently I am working on it making it work on some advance algorithm and methods to make it suitable for a user to explore the website.
-Thank You
+Hello and welcome to my GitHub!
+
+This is a simple e-commerce website built using the Django framework. The project includes user authentication, product listings, and an admin panel for managing products and users.
+
+Currently, I am actively working on enhancing the website by integrating advanced algorithms and improving its functionality to create a smoother and more user-friendly experience.
+
+Thank you for visiting!
+
